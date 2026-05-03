@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+
+{% block title %}GECA - Services | Global English and Computer Academy{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="page-header-content">
+        <h1>Our Services</h1>
+        <p>Comprehensive educational services for your career growth</p>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="section services">
+    <div class="container">
+        <h2 class="section-title">What We Offer</h2>
+
+        <div class="services-grid">
+            <!-- Service 1: Science Classes -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-flask-vial"></i>
+                </div>
+                <h3>Science Classes</h3>
+                <p>Comprehensive science education covering Physics, Chemistry, and Biology with practical laboratory experience.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Interactive lectures and demonstrations</li>
+                    <li><i class="fas fa-check"></i> Hands-on laboratory practicals</li>
+                    <li><i class="fas fa-check"></i> Exam preparation for board examinations</li>
+                    <li><i class="fas fa-check"></i> Regular assessments and progress tracking</li>
+                </ul>
+                <a href="{{ url_for('courses') }}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 2: Computer Science -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Computer Science</h3>
+                <p>In-depth training in programming, software development, and computer systems for aspiring developers and engineers.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Multiple programming languages</li>
+                    <li><i class="fas fa-check"></i> Object-oriented programming concepts</li>
+                    <li><i class="fas fa-check"></i> Web and mobile development</li>
+                    <li><i class="fas fa-check"></i> Real-world projects and portfolios</li>
+                </ul>
+                <a href="{{ url_for('courses') }}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 3: Networking -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>Networking & IT Infrastructure</h3>
+                <p>Professional training in network setup, server administration, and IT infrastructure management.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Network fundamentals and protocols</li>
+                    <li><i class="fas fa-check"></i> Server setup and management</li>
+                    <li><i class="fas fa-check"></i> Cybersecurity basics and practices</li>
+                    <li><i class="fas fa-check"></i> Cloud platform training (AWS, Azure)</li>
+                </ul>
+                <a href="{{ url_for('courses') }}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 4: IT Diplomas -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>IT Diplomas & Certifications</h3>
+                <p>Industry-recognized diploma and certification programs to advance your IT career and earning potential.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> CompTIA certifications (A+, Network+, Security+)</li>
+                    <li><i class="fas fa-check"></i> Cisco Certified Network Associate (CCNA)</li>
+                    <li><i class="fas fa-check"></i> Microsoft Solutions Certifications</li>
+                    <li><i class="fas fa-check"></i> Cloud certifications (AWS, Azure, GCP)</li>
+                </ul>
+                <a href="{{ url_for('courses') }}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 5: NEBOSH Safety Courses -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>NEBOSH Safety Courses</h3>
+                <p>Professional safety training and NEBOSH certifications for workplace health and safety management.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> NEBOSH General Certificate</li>
+                    <li><i class="fas fa-check"></i> NEBOSH Construction Certificate</li>
+                    <li><i class="fas fa-check"></i> Safety management systems and practices</li>
+                    <li><i class="fas fa-check"></i> Hazard identification and risk assessment</li>
+                </ul>
+                <a href="{{ url_for('courses') }}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 6: English Language Courses -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <h3>English Language Courses</h3>
+                <p>Specialized English training to improve communication, writing, and professional language skills.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> General English and conversational skills</li>
+                    <li><i class="fas fa-check"></i> Business English and professional communication</li>
+                    <li><i class="fas fa-check"></i> IELTS and exam preparation</li>
+                    <li><i class="fas fa-check"></i> Technical writing and presentation skills</li>
+                </ul>
+                <a href="{{ url_for('courses') }}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 7: Data Science & Analytics -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Data Science & Analytics</h3>
+                <p>Comprehensive data science training covering analytics, machine learning, and big data technologies.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Python and R programming for data analysis</li>
+                    <li><i class="fas fa-check"></i> Machine learning algorithms and applications</li>
+                    <li><i class="fas fa-check"></i> Data visualization and reporting</li>
+                    <li><i class="fas fa-check"></i> Big data technologies and tools</li>
+                </ul>
+                <a href="{{ url_for('courses') }}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 8: Consultation & Counseling -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Career Counseling & Consultation</h3>
+                <p>Professional guidance and consultation to help you choose the right career path and courses.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Career path assessment and planning</li>
+                    <li><i class="fas fa-check"></i> One-on-one counseling sessions</li>
+                    <li><i class="fas fa-check"></i> Resume and interview preparation</li>
+                    <li><i class="fas fa-check"></i> Job placement assistance</li>
+                </ul>
+                <a href="{{ url_for('contact') }}" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Additional Benefits Section -->
+<section class="section benefits">
+    <div class="container">
+        <h2 class="section-title">Why Our Services Stand Out</h2>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h4>Comprehensive Curriculum</h4>
+                <p>Designed by industry experts and aligned with current market demands</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h4>Practical Training</h4>
+                <p>Hands-on projects, assignments, and real-world problem solving</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h4>Flexible Scheduling</h4>
+                <p>Multiple batch timings and online options for working professionals</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h4>Affordable Pricing</h4>
+                <p>Competitive fees with flexible payment plans and scholarships available</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h4>Expert Instructors</h4>
+                <p>Learn from professionals with years of industry experience</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h4>Job Placement</h4>
+                <p>Career assistance and placement support for qualified graduates</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Advance Your Career?</h2>
+            <p>Choose any of our services and start your transformation today</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary btn-large">Inquire Now</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

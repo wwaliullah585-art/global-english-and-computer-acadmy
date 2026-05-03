@@ -1,0 +1,327 @@
+{% extends 'base.html' %}
+
+{% block title %}GECA - Tutorials | Global English and Computer Academy{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="page-header-content">
+        <h1>Free Tutorials</h1>
+        <p>Learn from our comprehensive video tutorials and guides</p>
+    </div>
+</section>
+
+<!-- Filter Section -->
+<section class="section filter-section">
+    <div class="container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Tutorials</button>
+            <button class="filter-btn" data-filter="programming">Programming</button>
+            <button class="filter-btn" data-filter="english">English</button>
+            <button class="filter-btn" data-filter="it">IT Skills</button>
+        </div>
+    </div>
+</section>
+
+<!-- Tutorials Grid Section -->
+<section class="section tutorials-section">
+    <div class="container">
+        <div class="tutorials-grid">
+            <!-- Tutorial 1 -->
+            <div class="tutorial-card" data-category="programming">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=250&fit=crop" alt="Python Basics">
+                    <div class="tutorial-overlay">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="play-button" data-toggle="modal">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                    <span class="tutorial-duration">45 min</span>
+                </div>
+                <div class="tutorial-content">
+                    <h3>Python Basics for Beginners</h3>
+                    <p class="tutorial-category"><i class="fas fa-tag"></i> Programming</p>
+                    <p class="tutorial-description">Learn Python fundamentals including variables, data types, loops, and conditionals.</p>
+                    <div class="tutorial-footer">
+                        <span class="tutorial-level">Beginner</span>
+                        <a href="#" class="tutorial-link">Watch Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial 2 -->
+            <div class="tutorial-card" data-category="programming">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=250&fit=crop" alt="JavaScript DOM">
+                    <div class="tutorial-overlay">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="play-button" data-toggle="modal">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                    <span class="tutorial-duration">60 min</span>
+                </div>
+                <div class="tutorial-content">
+                    <h3>JavaScript DOM Manipulation</h3>
+                    <p class="tutorial-category"><i class="fas fa-tag"></i> Programming</p>
+                    <p class="tutorial-description">Master DOM manipulation techniques to build interactive web applications with JavaScript.</p>
+                    <div class="tutorial-footer">
+                        <span class="tutorial-level">Intermediate</span>
+                        <a href="#" class="tutorial-link">Watch Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial 3 -->
+            <div class="tutorial-card" data-category="programming">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f5ae4e8e90f?w=400&h=250&fit=crop" alt="React.js">
+                    <div class="tutorial-overlay">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="play-button" data-toggle="modal">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                    <span class="tutorial-duration">90 min</span>
+                </div>
+                <div class="tutorial-content">
+                    <h3>Introduction to React.js</h3>
+                    <p class="tutorial-category"><i class="fas fa-tag"></i> Programming</p>
+                    <p class="tutorial-description">Learn React basics including components, props, state, and hooks for modern web development.</p>
+                    <div class="tutorial-footer">
+                        <span class="tutorial-level">Intermediate</span>
+                        <a href="#" class="tutorial-link">Watch Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial 4 -->
+            <div class="tutorial-card" data-category="programming">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=250&fit=crop" alt="Database Design">
+                    <div class="tutorial-overlay">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="play-button" data-toggle="modal">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                    <span class="tutorial-duration">75 min</span>
+                </div>
+                <div class="tutorial-content">
+                    <h3>SQL Database Design</h3>
+                    <p class="tutorial-category"><i class="fas fa-tag"></i> Programming</p>
+                    <p class="tutorial-description">Master SQL queries, database normalization, and relational database design principles.</p>
+                    <div class="tutorial-footer">
+                        <span class="tutorial-level">Intermediate</span>
+                        <a href="#" class="tutorial-link">Watch Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial 5 -->
+            <div class="tutorial-card" data-category="english">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793313e4de?w=400&h=250&fit=crop" alt="English Speaking">
+                    <div class="tutorial-overlay">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="play-button" data-toggle="modal">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                    <span class="tutorial-duration">30 min</span>
+                </div>
+                <div class="tutorial-content">
+                    <h3>English Speaking Tips</h3>
+                    <p class="tutorial-category"><i class="fas fa-tag"></i> English</p>
+                    <p class="tutorial-description">Improve your English speaking skills with practical tips and pronunciation guidance.</p>
+                    <div class="tutorial-footer">
+                        <span class="tutorial-level">Beginner</span>
+                        <a href="#" class="tutorial-link">Watch Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial 6 -->
+            <div class="tutorial-card" data-category="english">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793313e4de?w=400&h=250&fit=crop" alt="Business English">
+                    <div class="tutorial-overlay">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="play-button" data-toggle="modal">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                    <span class="tutorial-duration">50 min</span>
+                </div>
+                <div class="tutorial-content">
+                    <h3>Business English Communication</h3>
+                    <p class="tutorial-category"><i class="fas fa-tag"></i> English</p>
+                    <p class="tutorial-description">Learn professional English for business meetings, emails, and presentations.</p>
+                    <div class="tutorial-footer">
+                        <span class="tutorial-level">Intermediate</span>
+                        <a href="#" class="tutorial-link">Watch Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial 7 -->
+            <div class="tutorial-card" data-category="english">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793313e4de?w=400&h=250&fit=crop" alt="IELTS Writing">
+                    <div class="tutorial-overlay">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="play-button" data-toggle="modal">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                    <span class="tutorial-duration">65 min</span>
+                </div>
+                <div class="tutorial-content">
+                    <h3>IELTS Writing Task 1 & 2</h3>
+                    <p class="tutorial-category"><i class="fas fa-tag"></i> English</p>
+                    <p class="tutorial-description">Master IELTS writing tasks with strategies and examples for high band scores.</p>
+                    <div class="tutorial-footer">
+                        <span class="tutorial-level">Advanced</span>
+                        <a href="#" class="tutorial-link">Watch Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial 8 -->
+            <div class="tutorial-card" data-category="it">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=250&fit=crop" alt="Network Basics">
+                    <div class="tutorial-overlay">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="play-button" data-toggle="modal">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                    <span class="tutorial-duration">55 min</span>
+                </div>
+                <div class="tutorial-content">
+                    <h3>Network Fundamentals</h3>
+                    <p class="tutorial-category"><i class="fas fa-tag"></i> IT Skills</p>
+                    <p class="tutorial-description">Understand networking concepts including OSI model, protocols, and network architecture.</p>
+                    <div class="tutorial-footer">
+                        <span class="tutorial-level">Beginner</span>
+                        <a href="#" class="tutorial-link">Watch Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial 9 -->
+            <div class="tutorial-card" data-category="it">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=250&fit=crop" alt="Linux Basics">
+                    <div class="tutorial-overlay">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="play-button" data-toggle="modal">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                    <span class="tutorial-duration">80 min</span>
+                </div>
+                <div class="tutorial-content">
+                    <h3>Linux Administration Basics</h3>
+                    <p class="tutorial-category"><i class="fas fa-tag"></i> IT Skills</p>
+                    <p class="tutorial-description">Learn Linux command line, file systems, users, and basic system administration tasks.</p>
+                    <div class="tutorial-footer">
+                        <span class="tutorial-level">Intermediate</span>
+                        <a href="#" class="tutorial-link">Watch Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial 10 -->
+            <div class="tutorial-card" data-category="it">
+                <div class="tutorial-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=250&fit=crop" alt="Cybersecurity">
+                    <div class="tutorial-overlay">
+                        <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="play-button" data-toggle="modal">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                    <span class="tutorial-duration">70 min</span>
+                </div>
+                <div class="tutorial-content">
+                    <h3>Cybersecurity Fundamentals</h3>
+                    <p class="tutorial-category"><i class="fas fa-tag"></i> IT Skills</p>
+                    <p class="tutorial-description">Introduction to cybersecurity principles, threats, and best practices for protection.</p>
+                    <div class="tutorial-footer">
+                        <span class="tutorial-level">Beginner</span>
+                        <a href="#" class="tutorial-link">Watch Tutorial</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Modal -->
+<div id="videoModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="video-container">
+            <iframe id="videoIframe" width="100%" height="600" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<section class="section cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Want Professional Training?</h2>
+            <p>Join our comprehensive courses for structured learning and certification</p>
+            <a href="{{ url_for('courses') }}" class="btn btn-primary btn-large">Explore Courses</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Filter functionality
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const filterValue = btn.getAttribute('data-filter');
+        
+        // Update active button
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Filter tutorials
+        document.querySelectorAll('.tutorial-card').forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                card.style.display = 'block';
+                setTimeout(() => card.classList.add('show'), 10);
+            } else {
+                card.classList.remove('show');
+                setTimeout(() => card.style.display = 'none', 300);
+            }
+        });
+    });
+});
+
+// Video modal functionality
+const modal = document.getElementById('videoModal');
+const videoIframe = document.getElementById('videoIframe');
+const closeBtn = document.querySelector('.close');
+
+document.querySelectorAll('.play-button').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const videoUrl = btn.getAttribute('href');
+        videoIframe.src = videoUrl;
+        modal.style.display = 'block';
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    videoIframe.src = '';
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+        videoIframe.src = '';
+    }
+});
+</script>
+{% endblock %}

@@ -1,0 +1,373 @@
+{% extends 'base.html' %}
+
+{% block title %}GECA - Courses | Global English and Computer Academy{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="page-header-content">
+        <h1>Our Courses</h1>
+        <p>Explore our comprehensive range of professional courses</p>
+    </div>
+</section>
+
+<!-- Filter Section -->
+<section class="section filter-section">
+    <div class="container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Courses</button>
+            <button class="filter-btn" data-filter="programming">Programming</button>
+            <button class="filter-btn" data-filter="science">Science</button>
+            <button class="filter-btn" data-filter="english">English</button>
+            <button class="filter-btn" data-filter="certifications">Certifications</button>
+        </div>
+    </div>
+</section>
+
+<!-- Courses Grid Section -->
+<section class="section courses-section">
+    <div class="container">
+        <div class="courses-grid">
+            <!-- Course 1 -->
+            <div class="course-card-large" data-category="programming">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" alt="Web Development">
+                    <span class="course-badge">Popular</span>
+                </div>
+                <div class="course-body">
+                    <h3>Web Development Bootcamp</h3>
+                    <p class="course-description">Master HTML5, CSS3, JavaScript, React, and backend technologies to build modern web applications.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                        <span><i class="fas fa-users"></i> 20 Students/Batch</span>
+                    </div>
+                    <div class="course-topics">
+                        <h5>Topics Covered:</h5>
+                        <ul>
+                            <li>HTML5 & CSS3 Fundamentals</li>
+                            <li>JavaScript ES6+</li>
+                            <li>React.js & State Management</li>
+                            <li>Backend with Node.js</li>
+                            <li>Database Design (SQL & NoSQL)</li>
+                            <li>Deployment & DevOps</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-fee">Fee: 25,000 PKR</span>
+                        <a href="{{ url_for('contact') }}" class="btn btn-small">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-card-large" data-category="programming">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f5ae4e8e90f?w=400&h=300&fit=crop" alt="Python Programming">
+                </div>
+                <div class="course-body">
+                    <h3>Python Programming & Development</h3>
+                    <p class="course-description">Learn Python from basics to advanced topics including OOP, web frameworks, and data manipulation.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 10 Weeks</span>
+                        <span><i class="fas fa-users"></i> 25 Students/Batch</span>
+                    </div>
+                    <div class="course-topics">
+                        <h5>Topics Covered:</h5>
+                        <ul>
+                            <li>Python Basics & Syntax</li>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Object-Oriented Programming</li>
+                            <li>Django & Flask Frameworks</li>
+                            <li>Database Integration</li>
+                            <li>API Development</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-fee">Fee: 20,000 PKR</span>
+                        <a href="{{ url_for('contact') }}" class="btn btn-small">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-card-large" data-category="programming">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" alt="Mobile App Development">
+                </div>
+                <div class="course-body">
+                    <h3>Mobile App Development</h3>
+                    <p class="course-description">Build native and cross-platform mobile applications using Flutter, React Native, and Swift.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 14 Weeks</span>
+                        <span><i class="fas fa-users"></i> 20 Students/Batch</span>
+                    </div>
+                    <div class="course-topics">
+                        <h5>Topics Covered:</h5>
+                        <ul>
+                            <li>Mobile App Concepts</li>
+                            <li>Flutter Framework</li>
+                            <li>React Native</li>
+                            <li>UI/UX Design for Mobile</li>
+                            <li>API Integration</li>
+                            <li>App Publishing & Deployment</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-fee">Fee: 28,000 PKR</span>
+                        <a href="{{ url_for('contact') }}" class="btn btn-small">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="course-card-large" data-category="programming">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f70504f9f?w=400&h=300&fit=crop" alt="Data Science">
+                    <span class="course-badge">Advanced</span>
+                </div>
+                <div class="course-body">
+                    <h3>Data Science & Machine Learning</h3>
+                    <p class="course-description">Master data analysis, visualization, and machine learning algorithms to solve real-world problems.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 16 Weeks</span>
+                        <span><i class="fas fa-users"></i> 15 Students/Batch</span>
+                    </div>
+                    <div class="course-topics">
+                        <h5>Topics Covered:</h5>
+                        <ul>
+                            <li>Data Preprocessing & Cleaning</li>
+                            <li>Statistical Analysis</li>
+                            <li>Data Visualization (Matplotlib, Seaborn)</li>
+                            <li>Machine Learning Algorithms</li>
+                            <li>Deep Learning Basics</li>
+                            <li>Real-world Projects</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-fee">Fee: 35,000 PKR</span>
+                        <a href="{{ url_for('contact') }}" class="btn btn-small">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 5 -->
+            <div class="course-card-large" data-category="science">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1576158432708-f5e4d15c3474?w=400&h=300&fit=crop" alt="Physics Fundamentals">
+                </div>
+                <div class="course-body">
+                    <h3>Physics Fundamentals</h3>
+                    <p class="course-description">Comprehensive physics course covering mechanics, thermodynamics, waves, and electricity with lab practicals.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                        <span><i class="fas fa-users"></i> 30 Students/Batch</span>
+                    </div>
+                    <div class="course-topics">
+                        <h5>Topics Covered:</h5>
+                        <ul>
+                            <li>Mechanics & Forces</li>
+                            <li>Energy & Work</li>
+                            <li>Heat & Thermodynamics</li>
+                            <li>Waves & Sound</li>
+                            <li>Electricity & Magnetism</li>
+                            <li>Lab Experiments</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-fee">Fee: 12,000 PKR</span>
+                        <a href="{{ url_for('contact') }}" class="btn btn-small">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 6 -->
+            <div class="course-card-large" data-category="science">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1532187863486-abbb9c3649d0?w=400&h=300&fit=crop" alt="Chemistry">
+                </div>
+                <div class="course-body">
+                    <h3>Chemistry Essentials</h3>
+                    <p class="course-description">Complete chemistry program covering inorganic, organic chemistry with practical laboratory experience.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                        <span><i class="fas fa-users"></i> 30 Students/Batch</span>
+                    </div>
+                    <div class="course-topics">
+                        <h5>Topics Covered:</h5>
+                        <ul>
+                            <li>Atomic Structure & Bonding</li>
+                            <li>Chemical Reactions</li>
+                            <li>Organic Chemistry Basics</li>
+                            <li>Periodic Table & Properties</li>
+                            <li>Analytical Chemistry</li>
+                            <li>Lab Practicals & Safety</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-fee">Fee: 12,000 PKR</span>
+                        <a href="{{ url_for('contact') }}" class="btn btn-small">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 7 -->
+            <div class="course-card-large" data-category="english">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793313e4de?w=400&h=300&fit=crop" alt="English Communication">
+                </div>
+                <div class="course-body">
+                    <h3>English Communication Mastery</h3>
+                    <p class="course-description">Improve your speaking, listening, reading, and writing skills for professional and personal growth.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                        <span><i class="fas fa-users"></i> 25 Students/Batch</span>
+                    </div>
+                    <div class="course-topics">
+                        <h5>Topics Covered:</h5>
+                        <ul>
+                            <li>Spoken English & Fluency</li>
+                            <li>Grammar & Vocabulary</li>
+                            <li>Listening Comprehension</li>
+                            <li>Formal Writing</li>
+                            <li>Presentation Skills</li>
+                            <li>Interview Preparation</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-fee">Fee: 10,000 PKR</span>
+                        <a href="{{ url_for('contact') }}" class="btn btn-small">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 8 -->
+            <div class="course-card-large" data-category="english">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793313e4de?w=400&h=300&fit=crop" alt="IELTS Preparation">
+                </div>
+                <div class="course-body">
+                    <h3>IELTS Exam Preparation</h3>
+                    <p class="course-description">Intensive IELTS preparation course focusing on strategies and practice for achieving high band scores.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                        <span><i class="fas fa-users"></i> 20 Students/Batch</span>
+                    </div>
+                    <div class="course-topics">
+                        <h5>Topics Covered:</h5>
+                        <ul>
+                            <li>Listening Test Strategies</li>
+                            <li>Reading Comprehension</li>
+                            <li>Writing Task 1 & 2</li>
+                            <li>Speaking Skills</li>
+                            <li>Vocabulary Building</li>
+                            <li>Full Practice Tests</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-fee">Fee: 18,000 PKR</span>
+                        <a href="{{ url_for('contact') }}" class="btn btn-small">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 9 -->
+            <div class="course-card-large" data-category="certifications">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" alt="Cisco CCNA">
+                </div>
+                <div class="course-body">
+                    <h3>Cisco Certified Network Associate (CCNA)</h3>
+                    <p class="course-description">Professional networking certification covering routing, switching, network fundamentals, and security.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 16 Weeks</span>
+                        <span><i class="fas fa-users"></i> 15 Students/Batch</span>
+                    </div>
+                    <div class="course-topics">
+                        <h5>Topics Covered:</h5>
+                        <ul>
+                            <li>Network Fundamentals</li>
+                            <li>Routing Protocols</li>
+                            <li>Switching Technologies</li>
+                            <li>Network Security</li>
+                            <li>WAN Technologies</li>
+                            <li>Lab Practicals & Exam Prep</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-fee">Fee: 40,000 PKR</span>
+                        <a href="{{ url_for('contact') }}" class="btn btn-small">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 10 -->
+            <div class="course-card-large" data-category="certifications">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" alt="CompTIA A+">
+                </div>
+                <div class="course-body">
+                    <h3>CompTIA A+ Certification</h3>
+                    <p class="course-description">Entry-level IT certification covering hardware, software, networking, and troubleshooting skills.</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                        <span><i class="fas fa-users"></i> 20 Students/Batch</span>
+                    </div>
+                    <div class="course-topics">
+                        <h5>Topics Covered:</h5>
+                        <ul>
+                            <li>PC Hardware & Assembly</li>
+                            <li>Operating Systems</li>
+                            <li>Networking Basics</li>
+                            <li>Troubleshooting</li>
+                            <li>Security Concepts</li>
+                            <li>Practice Exams</li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-fee">Fee: 22,000 PKR</span>
+                        <a href="{{ url_for('contact') }}" class="btn btn-small">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Find Your Perfect Course</h2>
+            <p>Contact us today for counseling and course selection assistance</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary btn-large">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const filterValue = btn.getAttribute('data-filter');
+        
+        // Update active button
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Filter courses
+        document.querySelectorAll('.course-card-large').forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                card.style.display = 'block';
+                setTimeout(() => card.classList.add('show'), 10);
+            } else {
+                card.classList.remove('show');
+                setTimeout(() => card.style.display = 'none', 300);
+            }
+        });
+    });
+});
+</script>
+{% endblock %}

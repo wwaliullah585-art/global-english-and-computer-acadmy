@@ -1,0 +1,281 @@
+{% extends 'base.html' %}
+
+{% block title %}GECA - Home | Global English and Computer Academy{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-orb hero-orb-one"></div>
+    <div class="hero-orb hero-orb-two"></div>
+    <div class="hero-grid-glow"></div>
+    <div class="hero-content">
+        <div class="hero-text">
+            <p class="hero-kicker"><i class="fas fa-bolt"></i> Learn English, IT and Computer Science in Bannu</p>
+            <h1 class="hero-title">
+                <span class="word">Build Skills That</span>
+                <span class="word highlight">Move Your Future</span>
+            </h1>
+            <p class="hero-subtitle">Global English and Computer Academy</p>
+            <p class="hero-description">A modern academy for practical computer training, confident English communication, and career-ready learning.</p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Get Started</a>
+                <a href="{{ url_for('courses') }}" class="btn btn-secondary">Explore Courses</a>
+            </div>
+            <div class="hero-trust-row">
+                <span><i class="fas fa-check-circle"></i> Practical Classes</span>
+                <span><i class="fas fa-check-circle"></i> Expert Mentors</span>
+                <span><i class="fas fa-check-circle"></i> Certificate Programs</span>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-image-card">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&h=760&fit=crop" alt="Students learning together">
+                <div class="hero-floating-card card-code">
+                    <i class="fas fa-code"></i>
+                    <span>Web Skills</span>
+                </div>
+                <div class="hero-floating-card card-english">
+                    <i class="fas fa-comments"></i>
+                    <span>Spoken English</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Preview Section -->
+<section class="section about-preview">
+    <div class="container">
+        <h2 class="section-title">Why Choose GECA?</h2>
+        <div class="about-grid">
+            <div class="about-card slide-in">
+                <div class="card-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Expert Teachers</h3>
+                <p>Highly qualified and experienced educators dedicated to student success</p>
+            </div>
+            <div class="about-card slide-in">
+                <div class="card-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Modern Curriculum</h3>
+                <p>Up-to-date courses aligned with industry standards and international best practices</p>
+            </div>
+            <div class="about-card slide-in">
+                <div class="card-icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <h3>Advanced Facilities</h3>
+                <p>State-of-the-art computer labs and learning resources</p>
+            </div>
+            <div class="about-card slide-in">
+                <div class="card-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Recognized Certifications</h3>
+                <p>Industry-recognized certifications and diplomas</p>
+            </div>
+            <div class="about-card slide-in">
+                <div class="card-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Proven Results</h3>
+                <p>Excellent placement and success rate among our graduates</p>
+            </div>
+            <div class="about-card slide-in">
+                <div class="card-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Student Support</h3>
+                <p>Dedicated support and mentorship throughout your learning journey</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="section statistics">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="500">0</h3>
+                <p class="stat-label">Students Enrolled</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="50">0</h3>
+                <p class="stat-label">Expert Instructors</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="25">0</h3>
+                <p class="stat-label">Active Courses</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="95">0</h3>
+                <p class="stat-label">% Success Rate</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Courses Section -->
+<section class="section featured-courses">
+    <div class="container">
+        <h2 class="section-title">Featured Courses</h2>
+        <div class="courses-grid">
+            <!-- Course Card 1 -->
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" alt="Web Development">
+                    <div class="course-overlay">
+                        <a href="{{ url_for('courses') }}" class="btn btn-small">View More</a>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <h3>Web Development</h3>
+                    <p class="course-meta"><i class="fas fa-clock"></i> 3 Months</p>
+                    <p>Learn HTML, CSS, JavaScript, and modern frameworks to build responsive websites.</p>
+                    <div class="course-footer">
+                        <span class="course-level">Beginner to Advanced</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f70504f9f?w=400&h=300&fit=crop" alt="Data Science">
+                    <div class="course-overlay">
+                        <a href="{{ url_for('courses') }}" class="btn btn-small">View More</a>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <h3>Data Science & Analytics</h3>
+                    <p class="course-meta"><i class="fas fa-clock"></i> 4 Months</p>
+                    <p>Master Python, data analysis, machine learning, and business intelligence.</p>
+                    <div class="course-footer">
+                        <span class="course-level">Intermediate</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" alt="English Proficiency">
+                    <div class="course-overlay">
+                        <a href="{{ url_for('courses') }}" class="btn btn-small">View More</a>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <h3>English Proficiency</h3>
+                    <p class="course-meta"><i class="fas fa-clock"></i> 2 Months</p>
+                    <p>Improve speaking, writing, listening, and reading skills with native instructors.</p>
+                    <div class="course-footer">
+                        <span class="course-level">All Levels</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 4 -->
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-adf4198c838f?w=400&h=300&fit=crop" alt="Network Administration">
+                    <div class="course-overlay">
+                        <a href="{{ url_for('courses') }}" class="btn btn-small">View More</a>
+                    </div>
+                </div>
+                <div class="course-content">
+                    <h3>Network Administration</h3>
+                    <p class="course-meta"><i class="fas fa-clock"></i> 3 Months</p>
+                    <p>Learn networking fundamentals, server management, and cybersecurity basics.</p>
+                    <div class="course-footer">
+                        <span class="course-level">Intermediate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-center">
+            <a href="{{ url_for('courses') }}" class="btn btn-primary">View All Courses</a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section testimonials">
+    <div class="container">
+        <h2 class="section-title">Student Testimonials</h2>
+        <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"GECA transformed my career. The instructors are excellent and the courses are very practical. I highly recommend it!"</p>
+                <div class="testimonial-author">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop" alt="Student">
+                    <div class="author-info">
+                        <p class="author-name">Ahmed Khan</p>
+                        <p class="author-title">Web Developer Graduate</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"The English courses helped me improve my communication skills significantly. Great faculty and supportive environment."</p>
+                <div class="testimonial-author">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop" alt="Student">
+                    <div class="author-info">
+                        <p class="author-name">Fatima Ali</p>
+                        <p class="author-title">English Course Graduate</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Best decision I made. The data science course was comprehensive and job-oriented. Landed a great job within months!"</p>
+                <div class="testimonial-author">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f70504f9f?w=50&h=50&fit=crop" alt="Student">
+                    <div class="author-info">
+                        <p class="author-name">Hassan Malik</p>
+                        <p class="author-title">Data Science Graduate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="section cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Join hundreds of students who have transformed their careers with GECA</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary btn-large">Apply Now</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+

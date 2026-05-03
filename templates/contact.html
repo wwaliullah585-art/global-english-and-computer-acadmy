@@ -1,0 +1,315 @@
+{% extends 'base.html' %}
+
+{% block title %}GECA - Contact & Admission | Global English and Computer Academy{% endblock %}
+
+{% block content %}
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="page-header-content">
+        <h1>Contact & Admission</h1>
+        <p>Get in touch with us or apply online</p>
+    </div>
+</section>
+
+<!-- Contact Information Section -->
+<section class="section contact-info">
+    <div class="container">
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Location</h3>
+                <p>Bannu, Khyber Pakhtunkhwa, Pakistan</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3>Phone</h3>
+                <p><a href="tel:+923001234567">+92-300-1234567</a></p>
+                <p><a href="tel:+923002234567">+92-300-2234567</a></p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <p><a href="mailto:info@geca.edu.pk">info@geca.edu.pk</a></p>
+                <p><a href="mailto:admission@geca.edu.pk">admission@geca.edu.pk</a></p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Office Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Forms Section -->
+<section class="section forms">
+    <div class="container">
+        <div class="forms-wrapper">
+            <!-- Quick Contact Form -->
+            <div class="form-container">
+                <h2>Quick Contact</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Course Interested In *</label>
+                        <select id="course" name="course" required>
+                            <option value="">Select a course</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Python Programming">Python Programming</option>
+                            <option value="Data Science">Data Science & Analytics</option>
+                            <option value="Mobile Development">Mobile App Development</option>
+                            <option value="Network Administration">Network Administration</option>
+                            <option value="English Language">English Language Course</option>
+                            <option value="Science Classes">Science Classes</option>
+                            <option value="IT Diplomas">IT Diplomas & Certifications</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    <div id="contactResponse" class="form-response"></div>
+                </form>
+            </div>
+
+            <!-- Online Admission Form -->
+            <div class="form-container">
+                <h2>Online Admission Form</h2>
+                <form id="admissionForm" class="admission-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required placeholder="First name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required placeholder="Last name">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="admissionEmail">Email Address *</label>
+                            <input type="email" id="admissionEmail" name="email" required placeholder="Email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="admissionPhone">Phone Number *</label>
+                            <input type="tel" id="admissionPhone" name="phone" required placeholder="Phone number">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth *</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="admissionCourse">Course Selection *</label>
+                            <select id="admissionCourse" name="course" required>
+                                <option value="">Select a course</option>
+                                <option value="Web Development Bootcamp">Web Development Bootcamp</option>
+                                <option value="Python Programming">Python Programming & Development</option>
+                                <option value="Data Science">Data Science & Machine Learning</option>
+                                <option value="Mobile Development">Mobile App Development</option>
+                                <option value="CCNA">Cisco Certified Network Associate (CCNA)</option>
+                                <option value="English Communication">English Communication Mastery</option>
+                                <option value="Physics">Physics Fundamentals</option>
+                                <option value="Chemistry">Chemistry Essentials</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="background">Educational Background *</label>
+                        <input type="text" id="background" name="background" required placeholder="E.g., Intermediate, Bachelor's Degree">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="address">Address *</label>
+                            <input type="text" id="address" name="address" required placeholder="Full address">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" name="city" required placeholder="City">
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the terms and conditions *</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+                    <div id="admissionResponse" class="form-response"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Google Map Section -->
+<section class="section map-section">
+    <div class="container">
+        <h2 class="section-title">Find Us on Map</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.0745316621356!2d71.45098972346869!3d32.92330097101757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df87c8c8c8c8cf%3A0x8c8c8c8c8c8c8c8c!2sBannu%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1234567890" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section faq">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h4><i class="fas fa-plus"></i> What are the admission requirements?</h4>
+                <p>Most courses require a high school diploma or equivalent. For advanced courses, specific prerequisites may apply. Contact us for detailed requirements for your chosen course.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-plus"></i> Do you offer scholarships?</h4>
+                <p>Yes, we offer merit-based scholarships and discounts for deserving students. Contact our admission office for more information about available scholarships.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-plus"></i> What is the course duration?</h4>
+                <p>Course durations vary from 8 weeks to 16 weeks depending on the course. See the courses page for specific duration details.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-plus"></i> Do you provide placement assistance?</h4>
+                <p>Yes, we provide career counseling and job placement assistance to qualified graduates. Our industry connections help connect graduates with employment opportunities.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-plus"></i> Are online courses available?</h4>
+                <p>Yes, selected courses are available in both online and offline formats. Check the course details for availability options.</p>
+            </div>
+            <div class="faq-item">
+                <h4><i class="fas fa-plus"></i> How can I contact the admission office?</h4>
+                <p>You can reach us via phone, email, or visit our office during business hours. Use the contact information provided above or fill out the contact form.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Contact Form Handler
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        course: document.getElementById('course').value,
+        message: document.getElementById('message').value
+    };
+
+    try {
+        const response = await fetch('/submit_contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+
+        const data = await response.json();
+        const responseDiv = document.getElementById('contactResponse');
+        
+        if (data.success) {
+            responseDiv.className = 'form-response success';
+            responseDiv.innerHTML = '<i class="fas fa-check"></i> ' + data.message;
+            document.getElementById('contactForm').reset();
+        } else {
+            responseDiv.className = 'form-response error';
+            responseDiv.innerHTML = '<i class="fas fa-exclamation"></i> ' + data.message;
+        }
+    } catch (error) {
+        const responseDiv = document.getElementById('contactResponse');
+        responseDiv.className = 'form-response error';
+        responseDiv.innerHTML = '<i class="fas fa-exclamation"></i> Error sending message. Please try again.';
+    }
+});
+
+// Admission Form Handler
+document.getElementById('admissionForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const formData = {
+        firstName: document.getElementById('firstName').value,
+        lastName: document.getElementById('lastName').value,
+        email: document.getElementById('admissionEmail').value,
+        phone: document.getElementById('admissionPhone').value,
+        dob: document.getElementById('dob').value,
+        course: document.getElementById('admissionCourse').value,
+        background: document.getElementById('background').value,
+        address: document.getElementById('address').value,
+        city: document.getElementById('city').value
+    };
+
+    try {
+        const response = await fetch('/submit_admission', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+
+        const data = await response.json();
+        const responseDiv = document.getElementById('admissionResponse');
+        
+        if (data.success) {
+            responseDiv.className = 'form-response success';
+            responseDiv.innerHTML = '<i class="fas fa-check"></i> ' + data.message;
+            document.getElementById('admissionForm').reset();
+        } else {
+            responseDiv.className = 'form-response error';
+            responseDiv.innerHTML = '<i class="fas fa-exclamation"></i> ' + data.message;
+        }
+    } catch (error) {
+        const responseDiv = document.getElementById('admissionResponse');
+        responseDiv.className = 'form-response error';
+        responseDiv.innerHTML = '<i class="fas fa-exclamation"></i> Error submitting application. Please try again.';
+    }
+});
+
+// FAQ Toggle
+document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('h4').addEventListener('click', () => {
+        item.classList.toggle('active');
+    });
+});
+</script>
+{% endblock %}
